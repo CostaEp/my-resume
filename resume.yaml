@@ -1,0 +1,102 @@
+name: Costa Epshtein
+job_title: WMS PMO & DevOps Engineer
+location: Israel 🇮🇱
+
+summary: |
+  Passionate DevOps Engineer with experience in cloud infrastructure, 
+  automation, CI/CD pipelines, and cloud-native technologies. Enthusiastic about Kubernetes, 
+  Docker, Terraform, and modern DevOps practices. Adept at leading projects, optimizing workflows, 
+  and implementing scalable solutions for enterprise environments.
+
+contact:
+  email: costadevop@gmail.com
+  linkedin: https://www.linkedin.com/in/costa-epshtein-33271131/
+  portfolio: https://CostaEp.github.io
+  github: https://github.com/CostaEp
+
+experience:
+  - company: Matrix
+    role: WMS PMO & Developer
+    duration: Current
+    responsibilities:
+      - Overseeing the full lifecycle of WMS software implementation in warehouse environments
+      - Identifying business requirements and ensuring alignment with company objectives
+      - Developing project plans, schedules, and managing project resources
+      - Collaborating with IT teams, warehouse staff, and vendors to ensure seamless integration
+      - Designing, coding, testing, and deploying WMS solutions using JavaScript, SQL, Node.js, REST API
+      - Conducting rigorous software testing and troubleshooting before deployment
+      - Ensuring compliance with warehouse operational standards and logistics best practices
+
+  - company: Firewave
+    role: DevOps Engineer
+    duration: Current
+    responsibilities:
+      - Implementing and managing cloud infrastructure and automation solutions
+      - Developing and optimizing CI/CD pipelines for efficient software deployment
+      - Managing containerized applications using Docker and Kubernetes
+      - Ensuring high availability and scalability of cloud-based systems
+      - Monitoring system performance with Prometheus and Grafana
+      - Enhancing security and compliance in DevOps workflows
+
+motivation: |
+  I am deeply passionate about DevOps, leveraging technology to drive efficiency and scalability.
+  My motivation comes from the pursuit of automation, process optimization, and continuous learning.
+  I thrive on solving complex problems, implementing robust solutions, and working in cross-functional teams.
+  DevOps is not just my profession—it is my approach to innovation and transformation.
+
+skills:
+  DevOps & Cloud:
+    - Docker
+    - Docker Compose
+    - Kubernetes
+    - AWS
+    - Terraform
+    - Ansible
+    - ArgoCD
+    - Grafana
+    - Jenkins
+    - Linux
+  Programming & Scripting:
+    - Bash
+    - Python
+    - Node.js
+    - REST API
+    - CSS
+    - HTML
+    - React
+  Databases:
+    - MSSQL
+    - MySQL
+    - MongoDB
+  Tools:
+    - Git
+    - GitHub
+    - GitLab
+    - Postman
+
+education:
+  - institution: NetCraft College
+    degree: Fullstack Development
+    year: 2019-2020
+  - institution: Real Time College
+    degree: DevOps
+    year: 2023-2024
+
+certifications_goal:
+  - name: AWS Certified Solutions Architect (Planned for 2025)
+
+achievements:
+  - title: Israeli Judo Champion (1998-1999, 60kg category)
+
+soft_skills:
+  - Problem-solving mindset
+  - Team collaboration & leadership
+  - Strong analytical thinking
+  - Continuous learning & improvement
+  - Project management & coordination
+  - Effective communication with stakeholders
+
+languages:
+  - English
+  - Russian
+  - Hebrew
