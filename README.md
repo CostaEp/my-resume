@@ -4,22 +4,53 @@
 ![GitHub forks](https://img.shields.io/github/forks/CostaEp/resume?style=social)
 
 ## 🌍 About Me
-🚀 **WMS PMO & DevOps Engineer** based in **Israel** 🇮🇱
+🚀 **WMS PMO & DevOps Engineer** based in **Israel**
 
-Passionate about DevOps, cloud infrastructure, automation, and CI/CD pipelines. Enthusiastic about Kubernetes, Docker, Terraform, and modern DevOps practices. Adept at leading projects, optimizing workflows, and implementing scalable solutions for enterprise environments.
+Passionate DevOps Engineer with experience in cloud infrastructure, automation, CI/CD pipelines, and cloud-native technologies. Enthusiastic about Kubernetes, Docker, Terraform, and modern DevOps practices. Adept at leading projects, optimizing workflows, and implementing scalable solutions for enterprise environments.
 
 ## 📜 Resume Format
 This repository contains my resume in **YAML format**, making it easy to version control and automate updates.
 
-📂 **File:** [`resume.yaml`](resume.yaml)
+📂 **Files:**
+- [`resume.yaml`](resume.yaml) - Resume data
+- [`template.md`](template.md) - Markdown template for resume
+- [`convert.py`](convert.py) - Python script to convert YAML to Markdown
+- [`.github/workflows/build-resume.yml`](.github/workflows/build-resume.yml) - GitHub Action to generate PDF
 
 ## 📥 How to Use
-1. **Clone the repo:**
-   ```sh
-   git clone https://github.com/CostaEp/resume.git
-   ```
-2. **View/Edit Resume:** Open `resume.yaml` in any text editor.
-3. **Export to PDF (optional):** Use tools like Pandoc or CI/CD automation.
+### 1️⃣ Clone the Repository
+```sh
+git clone https://github.com/CostaEp/resume.git
+cd resume
+```
+
+### 2️⃣ Convert YAML to Markdown
+```sh
+python3 convert.py
+```
+This will generate `resume.md` from `resume.yaml` using `template.md`.
+
+### 3️⃣ Generate PDF with Pandoc
+```sh
+pandoc resume.md -o resume.pdf --pdf-engine=xelatex
+```
+This creates a PDF version of the resume.
+
+## 🚀 Automating with GitHub Actions
+This repository is integrated with **GitHub Actions**, which automatically generates `resume.pdf` when `resume.yaml` is updated.
+
+### How It Works:
+1. **On every push to `main` (or manual trigger), GitHub Action runs**
+2. It **converts `resume.yaml` → `resume.md`** using Python
+3. It **generates `resume.pdf`** using Pandoc
+4. The PDF is **uploaded as an artifact**
+5. The latest PDF version is **released in GitHub Releases**
+
+### Manually Trigger the Workflow
+You can manually trigger the workflow from GitHub Actions:
+1. Go to the **"Actions"** tab in this repository.
+2. Select **"Build Resume PDF"**.
+3. Click **"Run workflow"**.
 
 ## 📌 Technologies & Tools
 - **DevOps & Cloud:** Docker, Kubernetes, AWS, Terraform, Ansible, ArgoCD, Grafana, Jenkins, Linux
