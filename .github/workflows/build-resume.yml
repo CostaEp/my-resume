@@ -1,0 +1,41 @@
+name: Build Resume PDF
+
+on:
+  push:
+    paths:
+      - "resume.yaml"  # Запуск при изменении резюме
+  workflow_dispatch:   # Возможность запустить вручную
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Install dependencies
+        run: |
+          sudo apt update
+          sudo apt install -y pandoc texlive-xetex python3 python3-pip
+          pip install pyyaml jinja2
+
+      - name: Convert YAML to Markdown
+        run: python3 convert.py
+
+      - name: Generate PDF from Markdown
+        run: pandoc resume.md -o resume.pdf --pdf-engine=xelatex
+
+      - name: Upload PDF as an artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: resume-pdf
+          path: resume.pdf
+
+      - name: Release PDF (optional)
+        uses: softprops/action-gh-release@v1
+        if: github.ref == 'refs/heads/main'
+        with:
+          files: resume.pdf
+          tag_name: latest
+          release_name: Latest Resume
+          body: "Automatically generated PDF resume from YAML."
