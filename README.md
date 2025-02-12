@@ -1,14 +1,5 @@
-# 📄 Costa Epshtein - Resume
 
-![GitHub Repo stars](https://img.shields.io/github/stars/CostaEp/resume?style=social)
-![GitHub forks](https://img.shields.io/github/forks/CostaEp/resume?style=social)
-
-## 🌍 About Me
-🚀 **WMS PMO & DevOps Engineer** based in **Israel**
-
-Passionate DevOps Engineer with experience in cloud infrastructure, automation, CI/CD pipelines, and cloud-native technologies. Enthusiastic about Kubernetes, Docker, Terraform, and modern DevOps practices. Adept at leading projects, optimizing workflows, and implementing scalable solutions for enterprise environments.
-
-## 📜 Resume Format
+# 📜 Resume Format
 This repository contains my resume in **YAML format**, making it easy to version control and automate updates.
 
 📂 **Files:**
@@ -51,15 +42,6 @@ You can manually trigger the workflow from GitHub Actions:
 1. Go to the **"Actions"** tab in this repository.
 2. Select **"Build Resume PDF"**.
 3. Click **"Run workflow"**.
-
-## 📌 Technologies & Tools
-- **DevOps & Cloud:** Docker, Kubernetes, AWS, Terraform, Ansible, ArgoCD, Grafana, Jenkins, Linux
-- **Programming & Scripting:** Bash, Python, Node.js, REST API, CSS, HTML, React
-- **Databases:** MSSQL, MySQL, MongoDB
-- **Tools:** Git, GitHub, GitLab, Postman
-
-## 🎯 Goals
-- 📜 **AWS Certified Solutions Architect (Planned for 2025)**
 
 ## 🔗 Connect with Me
 - **📧 Email:** [costadevop@gmail.com](mailto:costadevop@gmail.com)
